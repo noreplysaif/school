@@ -1,0 +1,42 @@
+type User @table {
+  name: String!
+  email: String!
+  role: String!
+  phoneNumber: String
+  profilePictureUrl: String
+}
+
+type Class @table {
+  className: String!
+  teacher: User!
+  roomNumber: String
+  scheduleTime: String
+}
+
+type Enrollment @table {
+  student: User!
+  class: Class!
+  enrollmentDate: Date
+}
+
+type Assignment @table {
+  title: String!
+  dueDate: Timestamp!
+  class: Class!
+  description: String
+  maxPoints: Int
+}
+
+type Submission @table {
+  assignment: Assignment!
+  student: User!
+  status: String!
+  grade: Float
+  submissionDate: Timestamp
+}
+
+type Announcement @table {
+  content: String!
+  createdAt: Timestamp!
+  class: Class
+}
