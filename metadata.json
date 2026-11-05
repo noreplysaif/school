@@ -1,0 +1,6 @@
+{
+  "name": "EduNexus - Greenfield Model School & College ERP",
+  "description": "Comprehensive school management system and public portal featuring Student, Parent, Teacher, and Super Admin portals with attendance, exams, fees, library, admissions, and PDF/Excel reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
